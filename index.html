@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Kim's Lab</title>
+
+    <!-- @seo-->
+    <meta name="description" content="Home page that points to lab assignments submitted for review ">
+    <meta name="keywords" content="lab,assignment,download,reviewed">
+
+    <!-- @author-->
+    <meta name="author" content="101045330@georgebrown.ca">
+
+
+    <!-- Default MediaQuery before custom overriding-->
+    <script src="js/mediaQueryForAllScreen.js"></script>
+    <script>
+        //Custom made script for this assignment that injects :
+        window.addEventListener('load', applyMediaQueries);
+        window.addEventListener('resize', applyMediaQueries);
+    </script>
+
+    <!--   
+        jQuery is used in ths assignment for:
+         - preloader 
+         - form tooltip message 
+     -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!--Preloader BEGINS-->
+    <script src="js/preloader.js"></script>
+    <link rel="stylesheet" href="css/design/preloader.css">
+    <!--Preloader ENDS-->
+
+    <!-- Default CSS file(s) -->
+    <link rel="stylesheet" href="css/design/default.css">
+
+    <!-- Layout CSS file(s) -->
+    <link rel="stylesheet" href="css/structure/layout.css">
+
+    <!-- Accessibility CSS file(s) -->
+    <link rel="stylesheet" href="css/design/accessibility.css">
+    <!-- ADDED USING JS // link rel="stylesheet" href="css/design/mediaQuery.css"-->
+    <!--link rel="stylesheet" href="css/design/formMediaQuery.css"-->
+
+    <!-- Design CSS file(s) -->
+    <link rel="stylesheet" href="css/design/typography.css">
+    <link rel="stylesheet" href="css/design/icons.css">
+    <link rel="stylesheet" href="css/design/forms.css">
+    <link rel="stylesheet" href="css/design/chart.css">
+
+    <!--remaining  style definition -->
+    <link rel="stylesheet" href="css/design/all.css">
+
+    <style>
+        body {
+            background-image: url(graphics/footer.png), url(graphics/footer.png);
+            /*MULTIPLE BACKGROUND IMAGES */
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, no-repeat;
+        }
+    </style>
+</head>
+
+<body class="flex_col " style="justify-content: space-evenly;">
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- header that is welcoming and make user stay for atleast 3 sec-->
+
+    <header class="flex_row" style="width:auto;">
+
+        <div id="header_left">
+            <img src="graphics/photo9.jpg" alt="Logo Placeholder" height="150" width="200"
+                style="border-radius:80px; ">
+        </div>
+
+        <div class="flex_col" style="margin-left:20px;">
+            <div class="progress-circle">25%</div>
+            <em> Course Complete </em>
+        </div>
+
+        <section id="header_right" class="flex_col" style="padding-left: 2em;">
+            <h1 style="text-shadow: 5px 12px rgb(211, 187, 233) ; "> Lab Archive </h1>
+            <h3>
+                Lab class information Zone !
+            </h3>
+        </section>
+
+    </header>
+
+    <!-- navigation that is clean and widely stands out -->
+    <nav id="top_navigation" class="flex_row " aria-label="Main Navigation" style="width:auto;">
+
+        <ol class="flex_row justify_content_fCenter">
+            <li style="background: none;background-color: rgb(155, 116, 162) !important; ">
+                <a href="index.html" style="color:bisque"> &triangleright; Home </a>
+            </li>
+            <li>
+                <a href="#" class="tooltip" title="404 Error" 
+                style="pointer-events: none; text-decoration: line-through;"> 
+                &triangleright; Lab 1 
+            </a>
+            </li>
+            <li>
+                <a href="lab2.html" class="tooltip" title="Lab 02" style="padding-top:20px;"> &triangleright; Lab 2 </a>
+            </li>
+            <li>
+                <a href="lab3.html" class="tooltip" title="Lab 03"> &triangleright; Lab 3 </a>
+            </li>
+
+        </ol>
+    </nav>
+
+    <hr>
+
+    <main class="flex_row " style="justify-content: space-between; width:auto;">
+
+        <!--<section id="embark">
+            jumbotron
+        </section>-->
+
+        <article id="describe" style="justify-content: center; padding:30px;">
+            <h2> Assignment 1: Simple HTML/CSS website via GitHub Pages</h2>
+
+            <blockquote> This page demonstrate solution to the following assignment assigned to FrontEnd Design Students
+                in the year Sep 2024. </blockquote>
+
+
+            <h4> Instructions </h4>
+            <h3> Objective </h3>
+
+            <pre style="white-space: pre-wrap;">
+                Students will be asked to develop and deploy a simple HTML and CSS based website (featuring at least three pages) using GitHub Pages, building upon their experience with Exercise #1. You are welcome to use third-party design software such as Webflow.
+
+*Addendum: You should NOT use React or npm as part of this assignment, as those should be reserved for Assignment 3. Please focus on simple HTML and CSS, as well as the materials covered during Exercise 1.
+
+][][][][][][][
+][ DELIVERY ][
+][][][][][][][
+
+- Public URL of the completed website hosted by GitHub Pages
+- Public URL of the corresponding GitHub repository
+- Additional Notes
+
+15% assigned per valid submission
+
+This assignment is designed for open-ended exploration and experimentation, but will be subject to potential penalty based on submission timing and validity of submitted entry.
+
+][][][][][][][
+][ CRITERIA ][
+][][][][][][][
+
+[Experience] (5%)
+
+ - Each page must include its own title and its own description
+ - Technical formatting of the page must adhere to best practices of prototype design
+ - Images must be sized appropriately
+ - Proper use of images, links, and other media elements
+ - Writing skills, grammar, spelling, style etc.
+ - The content is well written and does not have spelling or grammatical errors
+ - The content is well formatted and considers punctuation, readability, typography, etc.
+
+[Functionality] (5%)
+
+ - All links work as expected and lead to the appropriate screen
+ - There are no "screen-not-found" errors
+ - Links click to the page they are referring to
+ - Forms, search, music playing or other special functionality works as expected
+ - Images load fast
+
+[Design] (5%)
+
+ - Orientation: Users will always know where they are in the prototype
+ - Interaction: Users will always know how to navigate through the prototype
+ - Target market and demographic
+ - Screen size and resolution
+ - Visual balance, composition, colour theory and artistic expression
+ - Consideration of visual hierarchy, elements and principles of design
+ - Inspiration
+
+ https://github.com/collections/github-pages-examples
+ https://www.awwwards.com/websites/bootstrap/
+
+ https://onepagelove.com/
+ https://webflow.com/made-in-webflow/microsite
+
+
+][][][][][][][
+][ DEADLINE ][
+][][][][][][][
+
+October 1, 2024 at 11:59PM (tentative)
+    Fixed penalty of 10%, equivalent to 1.5% of the final grade, for late submission
+        Due on Oct 1, 2024 11:59 PM
+            </pre>
+
+        </article>
+
+        <section id="mapout">
+            <h6>&nbsp;</h6>
+            <aside style="padding:20px;">
+                <div class="container regexForm flex_row">
+                    <fieldset>
+                        <legend>
+                            <h2>Valuable Feedback</h2>
+                        </legend>
+
+                        <form id="myForm" action="#" method="post" enctype="multipart/form-data">
+
+                            <script>
+                                /*
+                                
+                                tinymce.init({
+                                    selector: 'textarea',
+                                    plugins: [
+                                        // Core editing features
+                                        'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+                                        // Your account includes a free trial of TinyMCE premium features
+                                        // Try the most popular premium features until Oct 12, 2024:
+                                        'checklist', 'mediaembed', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown',
+                                    ],
+                                    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                                    tinycomments_mode: 'embedded',
+                                    tinycomments_author: 'Author name',
+                                    mergetags_list: [
+                                        { value: 'First.Name', title: 'First Name' },
+                                        { value: 'Email', title: 'Email' },
+                                    ],
+                                    ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+                                });
+
+                                */
+                            </script>
+
+                            <section class="flex_col" style="justify-content: flex-start; flex:1; align-self: baseline;">
+                                <h5>Personal Information:</h5>
+                                <div class="form-group ">
+                                    <label for="name">
+                                        Name
+                                        <input type="text" id="name" name="name" required aria-required="true"
+                                            minlength="8" pattern="[A-Za-z\s]{1,50}"
+                                            title="Only letters and spaces, up to 50 characters"
+                                            >
+                                    </label>
+
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="email">Email
+                                        <input type="email" id="email" name="email" required aria-required="true"
+                                            minlength="8">
+                                    </label>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="phone">Phone
+                                        <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}"
+                                            title="Phone number format: 123-456-7890" minlength="12">
+                                    </label>
+                                </div>
+                            </section>
+
+                            <section class="flex_col">
+                                <div class="form-group ">
+                                    <h6><label for="message">Message</label></h6>
+                                    <textarea id="message" name="message" rows="4"></textarea>
+                                </div>
+                            </section>
+
+                            <section class="flex_row">
+                                <div class="form-group flex_row">
+                                    <div class="flex_row" style="justify-content:flex-start">
+
+                                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+
+                                        <h6><label for="subscribe" style="text-shadow:none;color:bisque">
+                                            Yes, I want to
+                                            subscribe to newsletter
+                                        </label></h6>
+
+                                        <button type="submit" onblur="validate()"> Submit </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </form>
+                    </fieldset>
+                </div>
+            </aside>
+        </section>
+
+    </main>
+
+
+    <footer id="footer" class="flex_row" style="justify-content: space-around; width:auto;">
+
+        <div id="footer_left" class="flex_col" style="justify-content: center;">
+            <code>
+               <s style="font-size:2em;"> &copy;</s>   &triangleright;<em> No </em> CopyFight,&triangleleft; &triangleright;<em> No </em>  &triangleright; LieSense.  &triangleleft;
+            </code>
+        </div>
+
+        <div id="footer_right" class="flex_row">
+
+            <a href="https://www.facebook.com" class="fa fa-facebook hint" title="Facebook"> f </a>
+            <a href="https://www.twitter.com" class="fa fa-twitter hint" title="Twitter"> t </a>
+            <a href="https://www.linkedin.com" class="fa fa-facebook hint " title="LinkedIn"> <small>iN</small> </a>
+
+            <!-- hint for social media links -->
+            <link rel="stylesheet" href="css/design/hint.css">
+
+        </div>
+
+    </footer>
+
+    <!--  Form validation, if any -->
+    <script src="js/form.js"></script>
+    <!--  Navigation effect -->
+    <script src="js/effects.js"></script>
+    <!-- Third party Begins-->
+
+    <!-- /*MULTIPLE BACKGROUND IMAGES */ -->
+
+
+    <!-- EXTERNAL script BEGINS-->
+    <!-- Rich text editor WYSIWYG for Feedback Form ->
+    <script src="https://cdn.tiny.cloud/1/gp3ikfeo5tjqunizkti3rh8atmka6iq73ayzk0jwnwcdwvn7/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <!- EXTERNAL script ENDS-->
+
+    <!-- Form data processing begins-->
+    <script>
+        $(document).ready(function () {
+            $('#myForm').on('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+
+                // Create a JSON object from the form values
+                var formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                    subscribe: $('#subscribe').val(),
+                    message: $('#message').val()
+                };
+
+                // Log the JSON object to the console
+                console.log(JSON.stringify(formData));
+
+                /*
+                // Send the JSON object to the server (replace 'your-server-endpoint' with your actual endpoint)
+                $.ajax({
+                    url: 'your-server-endpoint',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(formData),
+                    success: function(response) {
+                        console.log('Data successfully sent to the server:', response);
+                    },
+                    error: function(error) {
+                        console.error('Error sending data to the server:', error);
+                    }
+                });
+                */
+            });
+        });
+    </script>
+    <!-- Form data processing ends -->
+</body>
+
+</html>
