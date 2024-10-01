@@ -60,31 +60,28 @@ This assignment is designed for open-ended exploration and experimentation, but 
  https://webflow.com/made-in-webflow/microsite
 
 
-][][][][][][][
-][ DEADLINE ][
-][][][][][][][
+### ][][][][][][][][][][
+### ][ DEADLINE ][
+### ][][][][][][][][][][
 
-October 1, 2024 at 11:59PM (tentative)
-    Fixed penalty of 10%, equivalent to 1.5% of the final grade, for late submission
-        Due on Oct 1, 2024 11:59 PM
+  ... October 1, 2024 at 11:59PM (tentative)
+  ... Fixed penalty of 10%, equivalent to 1.5% of the final grade, for late submission
+  ... Due on Oct 1, 2024 11:59 PM
         
-
-
-
-
 ---
 # SUBMISSION
 ][][][][][][][][][][][][][][][][][][
 DOWNLOAD SOLUTION or PREVIEW ONLINE
 ][][][][][][][][][][][][][][][][][][
 
-REPO:
-https://github.com/101045330/Assignment1/   
+## Fork / Download Zip
+  * ### [Repository URL](https://www.google.com](https://github.com/101045330/Assignment1/ )
 
-LIVE:
-https://studious-parakeet-g4v47p69ggq3ww6x-5500.app.github.dev/index.html
+## Fork & View Live on Codespaces using following Extension
+ * ### [LiveLink using Codespaces](https://studious-parakeet-g4v47p69ggq3ww6x-5500.app.github.dev/index.html)
+ * ###### [I Used this Extension for Live View](https://studious-parakeet-g4v47p69ggq3ww6x.github.dev/) 
 
----
+------
 ## FEATURES
 ### PRELOADER
 ```javascript
