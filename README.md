@@ -68,6 +68,10 @@ October 1, 2024 at 11:59PM (tentative)
 ][][][][][][][][][][][][][][][][][][
 DOWNLOAD SOLUTION or PREVIEW ONLINE
 ][][][][][][][][][][][][][][][][][][
-https://github.com/101045330/Assignment1/        
+
+REPO:
+https://github.com/101045330/Assignment1/   
+
+LIVE:
 https://studious-parakeet-g4v47p69ggq3ww6x-5500.app.github.dev/index.html
 
