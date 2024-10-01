@@ -76,12 +76,13 @@ DOWNLOAD SOLUTION or PREVIEW ONLINE
 
 ## Fork / Download Zip
   * ### [Repository URL](https://www.google.com](https://github.com/101045330/Assignment1/ )
+    
 ## View / Github Pages
-  * ### [Repository URL](https://101045330.github.io/Assignment1/ )
+  * ### [VIEW: Github Pages](https://101045330.github.io/Assignment1/ )
 
 
-## Fork & View Live on Codespaces using following Extension
- * ### [LiveLink using Codespaces](https://studious-parakeet-g4v47p69ggq3ww6x-5500.app.github.dev/index.html)
+### Fork & View Live on Codespaces using following Extension
+ * ##### [LiveLink using Codespaces](https://studious-parakeet-g4v47p69ggq3ww6x-5500.app.github.dev/index.html)
  * ###### [I Used this Extension for Live View](https://studious-parakeet-g4v47p69ggq3ww6x.github.dev/) 
 
 ------
@@ -137,7 +138,7 @@ function appendCSS(css) {
 
 [screenshot3]: https://github.com/101045330/Assignment1/blob/main/screenshots/screenshot3.png "Footer Section"
 
-### OUTPUT - SCREENSHOT - Markdown 
+### OUTPUT - SCREENSHOT - markdown 
 ![alt text][screenshot4]
 
 [screenshot4]: https://github.com/101045330/Assignment1/blob/main/screenshots/screenshot4.png "Markdown Section"
