@@ -120,3 +120,10 @@ function appendCSS(css) {
 
 }
 ```
+### SKETCH
+
+![alt text][logo]
+
+[logo]: https://github.com/101045330/Assignment1/blob/main/css/design/prototype.png "Sketch"
+
+
