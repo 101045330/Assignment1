@@ -115,9 +115,7 @@ blockquote:after {
 blockquote p {
   display: inline;
 }
-footer{
 
-}
 pre{padding:20px;}
 
 #myForm input[type=text]{min-width: 100px; border:none;opacity:0.85;}
@@ -128,4 +126,4 @@ pre{padding:20px;}
 #myForm input:hover{opacity:1;}
 .form-group{ border:none !important;}
 
-pre{opacity:0.9 !important;}|
+pre{opacity:0.9 !important;}
